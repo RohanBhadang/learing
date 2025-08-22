@@ -1,0 +1,48 @@
+/* Basic page setup */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+/* Container to center everything on the page */
+.container {
+    width: 310px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+/* The game board */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    margin: 20px auto;
+    border: 2px solid #000;
+}
+
+/* Each box (cell) of the board */
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ccc;
+    font-size: 55px;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+    box-sizing: border-box; 
+}
+
+/* The win/loss message area */
+.message {
+    font-size: 1.2em;
+    font-weight: bold;
+    height: 30px;
+}
+
+/* Basic styling for the restart button */
+button {
+    margin-top: 15px;
+    padding: 8px 16px;
+    font-size: 1em;
+    cursor: pointer;
+}
